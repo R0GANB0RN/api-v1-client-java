@@ -28,7 +28,8 @@ public class OkClient implements HttpClientInterface {
     private OkClient() {
         //prevent instantiation through reflection.
         if (okClientInstance != null) {
-            throw new IllegalStateException("Already initialized.");
+            throw new IllegalStateException("Already initialized!");
+
         }
     }
 
